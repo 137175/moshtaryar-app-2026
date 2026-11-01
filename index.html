@@ -234,6 +234,8 @@ document.getElementById('vendorForm').addEventListener('submit',e=>{
     rubika:document.getElementById('nvRubika').value.trim(),
     hours:document.getElementById('nvHours').value.trim(),
     address:document.getElementById('nvAddress').value.trim(),
+    lat:document.getElementById('nvLat').value.trim()===''?null:Number(document.getElementById('nvLat').value),
+    lng:document.getElementById('nvLng').value.trim()===''?null:Number(document.getElementById('nvLng').value),
     services:parseServices(document.getElementById('nvServices').value),
     faq:document.getElementById('nvFaq').value.trim()
   };
